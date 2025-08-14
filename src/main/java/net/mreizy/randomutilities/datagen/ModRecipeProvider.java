@@ -42,7 +42,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('T', ModItems.TABLET_OF_DESTRUCTION_HUMAN)
                 .unlockedBy("has_emerald", has(Items.EMERALD)).save(recipeOutput, "raut:shaped/earth_tablet_of_destruction");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TABLET_OF_DESTRUCTION_HUMAN.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TABLET_OF_DESTRUCTION_HEAVEN.get())
                 .pattern("DND")
                 .pattern("DTD")
                 .pattern("DDD")

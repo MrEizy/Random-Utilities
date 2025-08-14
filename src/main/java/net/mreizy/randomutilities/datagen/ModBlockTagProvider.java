@@ -2,7 +2,9 @@ package net.mreizy.randomutilities.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Blocks;
 import net.mreizy.randomutilities.RandomUtilities;
+import net.mreizy.randomutilities.utils.ModTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -16,6 +18,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
+
+        tag(ModTags.Blocks.DESTRUCTIBLE_BLOCKS)
+                .add(Blocks.STONE)
+                .add(Blocks.GRANITE)
+                .add(Blocks.ANDESITE)
+                .add(Blocks.DIORITE)
+                .add(Blocks.DEEPSLATE)
+                .add(Blocks.GRAVEL)
+                .add(Blocks.SAND)
+                .add(Blocks.TUFF)
+                .add(Blocks.DIRT);
 
     }
 }
