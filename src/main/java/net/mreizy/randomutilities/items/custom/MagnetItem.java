@@ -34,7 +34,7 @@ public class MagnetItem extends Item {
             boolean isOn = !isOn(stack);
             setOn(stack, isOn);
             if (!level.isClientSide) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 1.0F);
+                level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 0.5F, 1.0F);
                 Component status = Component.literal(isOn ? "On" : "Off")
                         .withStyle(isOn ? ChatFormatting.GREEN : ChatFormatting.RED);
                 player.sendSystemMessage(Component.literal("Magnet = ").append(status));
