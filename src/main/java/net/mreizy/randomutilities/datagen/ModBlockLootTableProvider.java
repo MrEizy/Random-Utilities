@@ -19,6 +19,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         //dropSelf(ModBlocks.JADE_BLOCK.get());
+        dropSelf(ModBlocks.WOOD_SPIKE.get());
 
     }
 

@@ -17,6 +17,12 @@ public class lang extends LanguageProvider {
 
 
 
+
+        //Blocks
+        add("block.randomut.wood_spike", "Wooden Spikes");
+
+
+
         //Items
         add("item.randomut.todh", "Tablet Of Destruction");
         add("tooltip.raut.todh", "§8[Human]");
@@ -26,6 +32,10 @@ public class lang extends LanguageProvider {
 
         add("item.randomut.todhe", "Tablet Of Destruction");
         add("tooltip.raut.todhe", "§b[Heaven]");
+
+
+
+        add("item.randomut.inventory_magnet", "Magnet");
 
     }
 }

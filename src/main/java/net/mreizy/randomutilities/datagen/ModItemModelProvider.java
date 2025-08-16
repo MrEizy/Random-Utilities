@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //basicItem(ModItems.JADE.get());
 
+        basicItem(ModItems.INVENTORY_MAGNET.get());
+
         //Tablet Of Destructions
         tablet(ModItems.TABLET_OF_DESTRUCTION_HUMAN.get());
         tablet(ModItems.TABLET_OF_DESTRUCTION_EARTH.get());

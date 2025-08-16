@@ -2,8 +2,10 @@ package net.mreizy.randomutilities.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.mreizy.randomutilities.RandomUtilities;
+import net.mreizy.randomutilities.blocks.ModBlocks;
 import net.mreizy.randomutilities.utils.ModTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -30,6 +32,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.SAND)
                 .add(Blocks.TUFF)
                 .add(Blocks.DIRT);
+
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.WOOD_SPIKE.get());
 
     }
 }

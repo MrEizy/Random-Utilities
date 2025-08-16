@@ -3,8 +3,10 @@ package net.mreizy.randomutilities.items;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.mreizy.randomutilities.RandomUtilities;
+import net.mreizy.randomutilities.items.custom.MagnetItem;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionEarth;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionHeaven;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionHuman;
@@ -17,12 +19,13 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RandomUtilities.MOD_ID);
 
-
-    //public static final DeferredItem<Item> JADE = ITEMS.register("jade",
-    //        () -> new Item(new Item.Properties()));
     //public static final DeferredItem<Item> REGENERATION_PILL = ITEMS.register("regeneration_pill",
     //        () -> new Item(new Item.Properties().food(ModFoodProperties.REGENERATION_PILL)));
 
+
+
+    public static final DeferredItem<Item> INVENTORY_MAGNET = ITEMS.register("inventory_magnet",
+            () -> new MagnetItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> TABLET_OF_DESTRUCTION_HUMAN = ITEMS.register("todh",
             () -> new TabletOfDestructionHuman(new Item.Properties()){

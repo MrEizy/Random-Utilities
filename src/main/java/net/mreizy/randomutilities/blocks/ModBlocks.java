@@ -3,7 +3,11 @@ package net.mreizy.randomutilities.blocks;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.mreizy.randomutilities.RandomUtilities;
+import net.mreizy.randomutilities.blocks.custom.spikes.WoodSpikeBlock;
 import net.mreizy.randomutilities.items.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -14,6 +18,15 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCK =
             DeferredRegister.createBlocks(RandomUtilities.MOD_ID);
+
+
+    public static final DeferredBlock<Block> WOOD_SPIKE = registerBlock("wood_spike",
+            () -> new WoodSpikeBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()
+            ));
 
     //public static final DeferredBlock<Block> JADE_ORE = registerBlock("jade_ore",
     //        () -> new DropExperienceBlock(UniformInt.of(2, 4),
