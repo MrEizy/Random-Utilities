@@ -22,8 +22,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(CuriosTags.BELT)
-                .add(ModItems.INVENTORY_MAGNET.get());
+
 
     }
 }

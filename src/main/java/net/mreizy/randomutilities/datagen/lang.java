@@ -46,6 +46,13 @@ public class lang extends LanguageProvider {
 
 
         add("item.randomut.inventory_magnet", "Magnet");
+        add("item.randomut.gold_ring", "Gold Ring");
+        add("item.randomut.angel_ring", "Angel Ring");
+
+
+
+        //Curios
+        add("curios.identifier.angel_ring", "Angel Ring");
 
     }
 }

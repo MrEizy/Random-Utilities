@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GOLD_SPIKE);
                         output.accept(ModBlocks.DIAMOND_SPIKE);
                         output.accept(ModBlocks.NETHERITE_SPIKE);
+                        output.accept(ModItems.GOLD_RING);
+                        output.accept(ModItems.ANGEL_RING);
                     }).build());
 
 /*    public static final Supplier<CreativeModeTab> ASCENSION_BLOCKS_TAB = CREATIVE_MODE_TAB.register("ascensionitb_blocks_tab",

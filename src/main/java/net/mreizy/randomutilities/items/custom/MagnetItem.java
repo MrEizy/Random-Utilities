@@ -102,4 +102,9 @@ public class MagnetItem extends Item implements ICurioItem {
             return CustomData.of(tag);
         });
     }
+
+    @Override
+    public boolean canEquipFromUse(SlotContext slotContext, ItemStack stack) {
+        return true;
+    }
 }

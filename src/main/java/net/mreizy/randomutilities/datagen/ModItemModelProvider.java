@@ -24,6 +24,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.INVENTORY_MAGNET.get());
         basicItem(ModItems.HORN_OF_HOLDING.get());
+        basicItem(ModItems.GOLD_RING.get());
+        basicItem(ModItems.ANGEL_RING.get());
 
         //Tablet Of Destructions
         tablet(ModItems.TABLET_OF_DESTRUCTION_HUMAN.get());

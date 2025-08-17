@@ -6,10 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.mreizy.randomutilities.RandomUtilities;
-import net.mreizy.randomutilities.items.custom.MagnetItem;
-import net.mreizy.randomutilities.items.custom.TabletOfDestructionEarth;
-import net.mreizy.randomutilities.items.custom.TabletOfDestructionHeaven;
-import net.mreizy.randomutilities.items.custom.TabletOfDestructionHuman;
+import net.mreizy.randomutilities.items.custom.*;
 import net.mreizy.randomutilities.items.custom.tools.HornOfHolding;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -23,6 +20,12 @@ public class ModItems {
     //public static final DeferredItem<Item> REGENERATION_PILL = ITEMS.register("regeneration_pill",
     //        () -> new Item(new Item.Properties().food(ModFoodProperties.REGENERATION_PILL)));
 
+
+
+    public static final DeferredItem<Item> GOLD_RING = ITEMS.register("gold_ring",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ANGEL_RING = ITEMS.register("angel_ring",
+            () -> new AngelRing(new Item.Properties().stacksTo(1)));
 
 
     public static final DeferredItem<Item> INVENTORY_MAGNET = ITEMS.register("inventory_magnet",
