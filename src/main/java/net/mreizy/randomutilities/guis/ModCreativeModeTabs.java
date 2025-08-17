@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TABLET_OF_DESTRUCTION_EARTH);
                         output.accept(ModItems.TABLET_OF_DESTRUCTION_HEAVEN);
                         output.accept(ModItems.INVENTORY_MAGNET);
+                        output.accept(ModItems.HORN_OF_HOLDING);
                         output.accept(ModBlocks.WOOD_SPIKE);
                     }).build());
 

@@ -10,6 +10,7 @@ import net.mreizy.randomutilities.items.custom.MagnetItem;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionEarth;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionHeaven;
 import net.mreizy.randomutilities.items.custom.TabletOfDestructionHuman;
+import net.mreizy.randomutilities.items.custom.tools.HornOfHolding;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -26,6 +27,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> INVENTORY_MAGNET = ITEMS.register("inventory_magnet",
             () -> new MagnetItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> HORN_OF_HOLDING = ITEMS.register("horn_of_holding",
+            () -> new HornOfHolding(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> TABLET_OF_DESTRUCTION_HUMAN = ITEMS.register("todh",
             () -> new TabletOfDestructionHuman(new Item.Properties()){

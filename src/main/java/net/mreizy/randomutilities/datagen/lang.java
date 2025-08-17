@@ -33,6 +33,11 @@ public class lang extends LanguageProvider {
         add("item.randomut.todhe", "Tablet Of Destruction");
         add("tooltip.raut.todhe", "§b[Heaven]");
 
+        add("item.randomut.horn_of_holding", "Horn Of Holding");
+        add("item.randomut.horn_of_holding_empty", "Horn Of Holding");
+        add("item.randomut.horn_of_holding.tooltip_empty", "No Genetical Makeup Inside");
+        add("item.randomut.horn_of_holding.tooltip_filled", "Contains the Genetical Makeup of: %s");
+        add("item.randomut.horn_of_holding.message.entity_type_denied", "This type of Genetical Makeup is not Allowed inside!");
 
 
         add("item.randomut.inventory_magnet", "Magnet");
