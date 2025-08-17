@@ -7,8 +7,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.mreizy.randomutilities.RandomUtilities;
+import top.theillusivec4.curios.api.CuriosTags;
 
 public class ModTags {
 
@@ -19,6 +21,17 @@ public class ModTags {
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(RandomUtilities.MOD_ID, name));
+        }
+    }
+
+    public static class Item {
+
+
+
+
+
+        private static TagKey<net.minecraft.world.item.Item> createTag(String name) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(RandomUtilities.MOD_ID, name));
         }
     }
 

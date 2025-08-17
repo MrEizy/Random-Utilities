@@ -19,10 +19,12 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.component.DataComponents;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.List;
 
-public class MagnetItem extends Item {
+public class MagnetItem extends Item implements ICurioItem {
     public MagnetItem(Properties properties) {
         super(properties);
     }
@@ -34,7 +36,7 @@ public class MagnetItem extends Item {
             boolean isOn = !isOn(stack);
             setOn(stack, isOn);
             if (!level.isClientSide) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, 0.5F, 1.0F);
+                level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 1.0F);
                 Component status = Component.literal(isOn ? "On" : "Off")
                         .withStyle(isOn ? ChatFormatting.GREEN : ChatFormatting.RED);
                 player.sendSystemMessage(Component.literal("Magnet = ").append(status));
@@ -52,6 +54,19 @@ public class MagnetItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (!level.isClientSide && entity instanceof Player player && isOn(stack)) {
+            pullEntities(player, level, stack);
+        }
+    }
+
+    @Override
+    public void curioTick(SlotContext slotContext, ItemStack stack) {
+        if (!slotContext.entity().level().isClientSide && isOn(stack)) {
+            pullEntities(slotContext.entity(), slotContext.entity().level(), stack);
+        }
+    }
+
+    private void pullEntities(Entity entity, Level level, ItemStack stack) {
+        if (entity instanceof Player player && isOn(stack)) {
             double radius = 8.0;
             AABB box = player.getBoundingBox().inflate(radius);
             List<Entity> entities = level.getEntities(player, box, e -> (e instanceof ItemEntity || e instanceof ExperienceOrb) && e.isAlive());

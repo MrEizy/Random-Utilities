@@ -1,0 +1,6 @@
+{
+  "order": 20,
+  "size": 1,
+  "icon": "randomut:slot/empty_magnet_slot",
+  "validators": ["curios:tag"]
+}
