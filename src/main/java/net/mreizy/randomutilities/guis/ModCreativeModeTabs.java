@@ -28,6 +28,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.INVENTORY_MAGNET);
                         output.accept(ModItems.HORN_OF_HOLDING);
                         output.accept(ModBlocks.WOOD_SPIKE);
+                        output.accept(ModBlocks.COPPER_SPIKE);
+                        output.accept(ModBlocks.IRON_SPIKE);
+                        output.accept(ModBlocks.GOLD_SPIKE);
+                        output.accept(ModBlocks.DIAMOND_SPIKE);
+                        output.accept(ModBlocks.NETHERITE_SPIKE);
                     }).build());
 
 /*    public static final Supplier<CreativeModeTab> ASCENSION_BLOCKS_TAB = CREATIVE_MODE_TAB.register("ascensionitb_blocks_tab",

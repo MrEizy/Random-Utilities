@@ -20,6 +20,11 @@ public class lang extends LanguageProvider {
 
         //Blocks
         add("block.randomut.wood_spike", "Wooden Spikes");
+        add("block.randomut.copper_spike", "Copper Spikes");
+        add("block.randomut.iron_spike", "Iron Spikes");
+        add("block.randomut.gold_spike", "Gold Spikes");
+        add("block.randomut.diamond_spike", "Diamond Spikes");
+        add("block.randomut.netherite_spike", "Netherite Spikes");
 
 
 

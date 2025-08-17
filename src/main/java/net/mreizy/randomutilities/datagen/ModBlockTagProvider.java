@@ -35,7 +35,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.WOOD_SPIKE.get());
+                .add(ModBlocks.WOOD_SPIKE.get())
+                .add(ModBlocks.COPPER_SPIKE.get())
+                .add(ModBlocks.IRON_SPIKE.get())
+                .add(ModBlocks.GOLD_SPIKE.get())
+                .add(ModBlocks.DIAMOND_SPIKE.get())
+                .add(ModBlocks.NETHERITE_SPIKE.get());
 
     }
 }

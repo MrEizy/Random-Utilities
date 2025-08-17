@@ -1,5 +1,10 @@
 {
   "values": [
-    "randomut:wood_spike"
+    "randomut:wood_spike",
+    "randomut:copper_spike",
+    "randomut:iron_spike",
+    "randomut:gold_spike",
+    "randomut:diamond_spike",
+    "randomut:netherite_spike"
   ]
 }
