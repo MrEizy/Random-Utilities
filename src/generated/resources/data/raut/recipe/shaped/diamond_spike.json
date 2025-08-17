@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:diamond_block"
+    },
+    "S": {
+      "item": "randomut:gold_spike"
+    },
+    "W": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WSW",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "randomut:diamond_spike"
+  }
+}

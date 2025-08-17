@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "raut:shaped/copper_spike"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_spike": {
+      "conditions": {
+        "items": [
+          {
+            "items": "randomut:wood_spike"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wood_spike"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "raut:shaped/copper_spike"
+    ]
+  }
+}

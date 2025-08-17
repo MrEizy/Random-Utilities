@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "GSG",
+    "SES",
+    "GSG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "randomut:horn_of_holding"
+  }
+}

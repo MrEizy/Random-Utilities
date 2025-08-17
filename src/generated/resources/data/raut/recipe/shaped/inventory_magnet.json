@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LER",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "randomut:inventory_magnet"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "S": {
+      "item": "randomut:wood_spike"
+    },
+    "W": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WSW",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "randomut:copper_spike"
+  }
+}

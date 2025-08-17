@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "randomut:iron_spike"
+    },
+    "W": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WSW",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "randomut:gold_spike"
+  }
+}
